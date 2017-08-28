@@ -1,0 +1,26 @@
+{
+  "name": "linter-marlint",
+  "version": "1.0.0",
+  "description": "Linter for marlint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SamVerschueren/vscode-marlint"
+  },
+  "license": "MIT",
+  "engine": {
+    "node": "*"
+  },
+  "scripts": {
+    "build": "installServerIntoExtension ../marlint ./package.json ./tsconfig.json && tsc -p .",
+    "watch": "installServerIntoExtension ../marlint ./package.json ./tsconfig.json && tsc --watch -p ."
+  },
+  "dependencies": {
+    "load-json-file": "^3.0.0",
+    "vscode-languageserver": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/load-json-file": "^2.0.6",
+    "@types/node": "^8.0.25",
+    "typescript": "^2.4.2"
+  }
+}

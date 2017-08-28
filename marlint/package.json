@@ -1,0 +1,32 @@
+{
+  "name": "linter-marlint",
+  "version": "1.0.0",
+  "description": "Linter for marlint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SamVerschueren/vscode-marlint"
+  },
+  "license": "MIT",
+  "categories": ["Linters"],
+  "publisher": "traveloka",
+  "engines": {
+    "vscode": "^1.6.0"
+  },
+  "activationEvents": ["onLanguage:javascript", "onLanguage:javascriptreact"],
+  "main": "./out/extension",
+  "scripts": {
+    "vscode:prepublish": "npm run update-vscode && cd ../marlint-server && npm run build && cd ../marlint && npm run build",
+    "build": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "update-vscode": "node ./node_modules/vscode/bin/install",
+    "postinstall": "npm run update-vscode"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.25",
+    "typescript": "^2.4.2",
+    "vscode": "^1.1.5"
+  }
+}
