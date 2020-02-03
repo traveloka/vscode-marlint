@@ -21,7 +21,12 @@ export function activate(context: ExtensionContext) {
   };
 
   const clientOptions: LanguageClientOptions = {
-    documentSelector: ["javascript", "javascriptreact"]
+    documentSelector: [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact"
+    ]
   };
 
   const disposable = new LanguageClient(
