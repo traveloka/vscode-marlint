@@ -12,7 +12,12 @@
   "engines": {
     "vscode": "^1.6.0"
   },
-  "activationEvents": ["onLanguage:javascript", "onLanguage:javascriptreact"],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact"
+  ],
   "main": "./out/extension",
   "scripts": {
     "vscode:prepublish": "npm run update-vscode && cd ../marlint-server && npm run build && cd ../marlint && npm run build",
