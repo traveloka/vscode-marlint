@@ -1,6 +1,6 @@
 {
   "name": "linter-marlint",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Linter for marlint",
   "repository": {
     "type": "git",
