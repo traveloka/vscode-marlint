@@ -1,13 +1,15 @@
 {
   "name": "linter-marlint",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "Linter for marlint",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SamVerschueren/vscode-marlint"
+    "url": "https://github.com/traveloka/vscode-marlint"
   },
   "license": "MIT",
-  "categories": ["Linters"],
+  "categories": [
+    "Linters"
+  ],
   "publisher": "traveloka",
   "engines": {
     "vscode": "^1.6.0"
